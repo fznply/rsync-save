@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle rsync-save",
+        "command": "rsync-save:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "rsync-save",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "rsync-save:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
