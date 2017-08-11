@@ -1,14 +1,29 @@
-# rsync-save package
-1. create .rsync_save.json into your project root dir, perhaps like bellow:
+rsync-save
+======
 
-```
-{
-    "enable": true,
-    "remoteHost":"remoteHost",
-    "remotePath":"remotePath"
-}
-```
+rsync-save is an used to sync increment to remote Mac/Linux tools.
+rsync-save depends on rsync and authorized ssh.
 
-2. when file or dir changes, it automatically synchronizes to the remote.
+suitable scene
+======
+use atom editor coding in local Mac/Linux, build/run the project on remote Mac/Linux.
 
-3. only work in OSX, Linux; need rsync ssh
+design mind
+======
+create a daemon process for monitoring the project dir.
+catch the file changes event, call rsync or ssh command to sync the increment.
+
+usage
+======
+1. create ".rsync_save.json" file in the project root dir, json content as bellow:
+
+	```
+    {
+        "enable": true,
+        "remoteHost": "remoteHost",
+        "remotePath": "remotePath"
+    }
+    ```
+
+2. make sure the local Mac/Linux can ssh remote Mac/Linux without password.
+3. it will automatically sync filesystem increment changes to the remote Mac/Linux.
