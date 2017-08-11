@@ -1,3 +1,13 @@
 # rsync-save package
-1. when the file is saved, it automatically synchronizes to the remote server.
-2. by observing to 'onDidSave' event, and then calling the script .rsync_save.sh.
+1. create .rsync_save.json int your project root dir, perhaps like bellow:
+
+// see tmpl.rsync_save.json
+```
+{
+    "enable": true,
+    "remoteHost":"remoteHost",
+    "remotePath":"remotePath"
+}
+```
+
+2. when file or dir changes, it automatically synchronizes to the remote.
