@@ -10,3 +10,5 @@
 ```
 
 2. when file or dir changes, it automatically synchronizes to the remote.
+
+3. only work in OSX, Linux; need rsync ssh
