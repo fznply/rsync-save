@@ -1,7 +1,7 @@
 {
   "name": "rsync-save",
   "main": "./lib/rsync-save",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "automatically synchronizes to the remote server",
   "keywords": [],
   "repository": "https://github.com/fznply/rsync-save",
