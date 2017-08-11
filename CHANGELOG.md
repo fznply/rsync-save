@@ -1,2 +1,5 @@
-## 0.9.4 - Stable Release
-* sample config
+## 0.9.6 - Stable Release
+* suitable scene
+* design mind
+* usage
+* faq

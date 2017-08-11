@@ -26,4 +26,18 @@ usage
     ```
 
 2. make sure the local Mac/Linux can ssh remote Mac/Linux without password.
+
+	```
+	# In Local Mac/Linux
+	cat ~/.ssh/config
+	Host aliasRemoteHost
+	  HostName 192.168.60.101
+	  User root
+	  Port 22
+	```
+
 3. it will automatically sync filesystem increment changes to the remote Mac/Linux.
+
+faq
+======
+- [Incompatible native module](https://discuss.atom.io/t/incompatible-native-module/21454)
