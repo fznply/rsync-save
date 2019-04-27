@@ -1,5 +1,5 @@
 {
-    "enable": true,
+    "enable": false,
     "remoteHost":"remoteHost",
     "remotePath":"remotePath"
 }

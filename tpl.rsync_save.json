@@ -1,5 +1,11 @@
-{
-    "enable": true,
-    "remoteHost":"remoteHost",
-    "remotePath":"remotePath"
-}
+[{
+    "enable": false,
+    "localPath": "path/to/dir1",
+    "remoteHost": "remoteHost1",
+    "remotePath": "/path/to/remote/dir1"
+},{
+    "enable": false,
+    "localPath": "path/to/dir2",
+    "remoteHost": "remoteHost2",
+    "remotePath": "/path/to/remote/dir2"
+}]

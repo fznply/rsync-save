@@ -1,5 +1,7 @@
-## 0.9.6 - Stable Release
+## 0.9.8 - Stable Release
 * suitable scene
 * design mind
 * usage
 * faq
+* support multi localPath
+* toggle show working state
