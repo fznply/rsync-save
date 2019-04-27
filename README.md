@@ -4,7 +4,7 @@ rsync-save
 rsync-save is an used to sync increment to remote Mac/Linux tools.
 rsync-save depends on rsync and authorized ssh.
 
-current version 0.9.8: support multi localPath, toggle show working state.
+current version 0.9.9: support multi localPath, toggle show working state.
 
 suitable scene
 ======
