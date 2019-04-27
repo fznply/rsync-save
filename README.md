@@ -2,7 +2,7 @@ rsync-save
 ======
 1. automatically sync file changes to the remote Mac/Linux.
 2. it depends on rsync and authorized ssh.
-3. current version 1.0.0:
+3. current version v1.0.0:
     a. observe multi localPath
     b. toggle show working state.
 
