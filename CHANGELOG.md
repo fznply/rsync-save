@@ -1,7 +1,7 @@
-## 0.9.9 - Stable Release
+## 1.0.0 - Stable Release
 * suitable scene
 * design mind
 * usage
 * faq
-* support multi localPath
+* observe multi localPath
 * toggle show working state

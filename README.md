@@ -1,10 +1,10 @@
 rsync-save
 ======
-
-rsync-save is an used to sync increment to remote Mac/Linux tools.
-rsync-save depends on rsync and authorized ssh.
-
-current version 0.9.9: support multi localPath, toggle show working state.
+1. automatically sync file changes to the remote Mac/Linux.
+2. it depends on rsync and authorized ssh.
+3. current version 1.0.0:
+    a. observe multi localPath
+    b. toggle show working state.
 
 suitable scene
 ======
@@ -12,14 +12,14 @@ use atom editor coding in local Mac/Linux, build/run the project on remote Mac/L
 
 design mind
 ======
-create a daemon process for monitoring the project dir.
-catch the file changes event, call rsync or ssh command to sync the increment.
+1. create a daemon process to observe the specify localPath.
+2. observe file changes event, rsync the increment to the remote Mac/Linux.
 
 usage
 ======
 1. create ".rsync_save.json" file in the project root dir, json content as bellow:
     ```
-    example 1: localPath is null, means the current dir
+    example 1: observe current dir.
     {
         "enable": true,
         "remoteHost": "remoteHost",
@@ -28,7 +28,7 @@ usage
     ```
 
     ```
-    example 2. support multi localPath
+    example 2: observe multi localPath.
     [{
         "enable": true,
         "localPath": "path/to/dir1",
@@ -57,7 +57,7 @@ usage
         Port 22
     ```
 
-3. it will automatically sync filesystem increment changes to the remote Mac/Linux.
+3. it will automatically sync file changes to the remote Mac/Linux.
 
 faq
 ======
